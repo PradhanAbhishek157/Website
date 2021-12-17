@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyStore - Research</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="image\logo.png">
+	<style type="text/css">
+		.logo img{
+			float: left;
+			width: 60px;
+			height: 60px;
+		}
+
+		.main{
+			max-width: 800px;
+			margin: auto;
+		}
+
+		.blogs{
+			width:75%;
+			height:auto;
+			position:absolute;
+			top:70%;
+			left:50%;
+			transform:translate(-50%,-50%);
+			transition:0.55s ease;
+			padding:30px;
+			color:black;
+			background:linear-gradient(rgba(0255,0255,0255,0.1),rgba(0255,0255,0255,0.1));
+			}
+		
+		.carousel{
+			width:auto;
+			height:auto;
+			margin-left:auto;
+			margin-right: auto;
+			}
+
+		.divs{
+			height: auto;
+			width: 85%;
+			margin: 0 auto;
+			}
+
+		.blogText{
+			font-size:15px;
+			height:40%:;
+			text-align:justify;
+			float:left;
+			word-wrap: break-word;
+			width:40%;
+			border-right:10px transparent white;
+			padding:20px;
+			margin-right: 5px;
+			background:linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.4));
+			box-shadow:5px 5px 5px grey;
+			}
+
+		.blogImg{
+			text-align:right;
+			float:right;
+			word-wrap: break-word;
+			width:40%;
+			border-left:1px solid black;
+			padding-left:px;
+			}
+
+		.arrow{
+			position:absolute;
+			top:50%;
+			color:white;
+			height:40px;
+			width:40px;
+			border-radius: 100%;
+			background-color: transparent;
+			font-size: 25px;
+			}
+
+		.arrow:hover{
+			background-color:white;
+			color:black;
+			}
+
+		.l{
+			float:right;
+			}
+		.r{
+			float:;left,
+		}
+		.lb{
+			margin-left: 0px;
+		}
+		.rb{
+			float: right;
+			margin-right: 2%;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+				<img src="image\logo.png">
+		</div>
+		<nav class="main">
+			<table>
+				<tr>
+					<th class="menu">
+						<a href="index.html">Home</a>
+					</th>
+					<th class="menu">
+						<a href="product.html">Products</a>
+					</th>
+					<th class="menu">
+						<a href="blog.html">Blogs</a>
+					</th>
+					<th class="current">
+						<a href="#">Research</a>
+					</th>
+					<th class="menu">
+						<a href="contact.html">Contact Us</a>
+					</th>
+				</tr>
+			</table>
+		</nav>
+	</header>
+	<div class="about">
+		<h1>About Us</h1>
+	</div>
+	<div class="storeinfo">
+		<p>Launched at 2019, MyStore is online shopping marketplace with an active presence with in the country. Supported by wide range of brand manufacturing electronic home appliances and many service solutions. MyStore has large variety of best quality home appliances and better customer support. Mystore is focused on providing excellent customer experience, ease-of-purchase, comprehensive customer care and hassle-free shopping and returns experience to our customers.</p>
+	</div>
+	<div class="sinfo">
+		<h4>MyStore is acquired by Kathmandu Impex in August 2019</h4>
+	</div>
+	<div class="blogs">
+		<div class="button lb">
+			<button onclick="change(-1)" class="arrow l">&#8666;</button>
+		</div>
+		<div class="button rb">
+			<button onclick="change(1)" class="arrow r">&#8667;</button>
+		</div>
+		<div class="carousel">
+
+			<div class="divs"><h3 style="color:white">Amazon</h3>
+				<div class="blogText"><p><h3>Research 5</h3></p>The website provides the information and ideas about creating a user-friendly website which is easy to navigate. Also, it is the most trusted and famous e-commerce website.</p><p><a href="https://www.amazon.com">Amazon</a></p>
+				</div><img src="image/amazon.png" class="blogImg" style="height:auto; width:48%;">
+			</div>
+
+			<div class="divs"><h3 style="color:white;">W3 Schools</h3>
+				<div class="blogText"> <h3>Research 1</h3><p> This particular website provides the overall inforamtion about html course. It contains  all the aspects of html like tags, attributes, events, color names, entities, character-sets, URL encoding, language codes, HTTP messages. Moreover, to this this website also provides information about css and javascript also.</p><p><a href="https://www.w3schools.com/html/">W3 Schools</a></p>
+				</div><img src="image/w3.jpg" class="blogImg" style="height:auto; width:48%;">
+			</div>
+
+			<div class="divs"><h3 style="color:white;">Apple</h3>
+				<div class="blogText"><h3>Research 2</h3><p>Apple is simply known for the best quality products possible and they deliver it in their website as well. Their website is simple and yet highly attractive due to the better color combination and more animation which makes the website pop out even more.</p><p><a href="https://www.apple.com">Apple</a></p>
+				</div><img src="image/apple.png" class="blogImg" style="height:auto; width:48%;">
+			</div>
+
+			<div class="divs"><h3 style="color:white;">Learning HTML</h3>
+				<div class="blogText"><h3>Research 3</h3><p>This website gives step-by-step guide that teaches us the basics of HTML and how to build our first website.That means how to layout an HTML page, how to add text and images, how to add headings and text formatting, and how to use table.This module sets the stage, getting you used to important concepts and syntax, looking at applying HTML to text, how to create hyperlinks, and how to use HTML to structure a webpage. </p><p><a href="https://html.com">Learning HTML</a></p>
+				</div><img src="image/html.jpg" class="blogImg" style="height:auto; width:48%;">
+			</div>
+
+			<div class="divs"><h3 style="color:white;">Daraz</h3><div class="blogText"> <h3>Research 4</h3><p> This particular website provided me the idea and also inspired me to make my webite more appealing by keeping it simple and more functional through the addition of necessary items only.</p><p><a href="https://www.daraz.com.np/?gclid=Cj0KCQjw753rBRCVARIsANe3o44kmjC4XREzRX0VbvNBDJMgeD_i54GhXqz5aSUdqRqCdxE9FSc4eKUaAt1CEALw_wcB">Daraz</a></p></div><img src="image/daraz.png" class="blogImg" style="height:auto; width:48%;"></div>
+		</div>
+	</div>
+	<footer>
+		<div class="copyright">
+			&copy; All Rights Reserved by <i>MyStore</i> &nbsp;&nbsp;&nbsp;&nbsp;
+		</div>
+	</footer>
+</body>
+<script type="text/javascript">
+	index = 0;
+	show(index);
+	function show(n){
+		var imgs = document.getElementsByClassName('divs');
+		if (n> imgs.length-1) {
+			index= 0;
+		}
+		if(n<0){
+			index= imgs.length - 1;
+		} 
+		for (var i = 0; i <= imgs.length-1; i++) {
+			imgs[i].style.display="none";
+		}
+			imgs[index].style.display="block";
+	}
+	function automatic(){
+		index++;
+		show(index);
+		setTimeout(automatic, 45000);
+	}
+	automatic();
+	function change(n){
+		index+= n;
+		show(index);
+	}
+</script>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyStore - Home</title>
+	<meta name="description" content="E-commerce page for MyStore" />
+	<meta name="keywords" content="HTML" />
+	<meta name="author" content="Abhishek Pradhan" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="image\logo.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		.logo img{
+			float: left;
+			width: 60px;
+			height: 60px;
+		}
+
+		.main{
+			max-width: 800px;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		alert("Welcome to MyStore");
+	</script>
+	<header>
+		<div class="logo">
+				<img src="image\logo.png">
+		</div>
+		<nav class="main">
+			<table>
+				<tr>
+					<th class="current">
+						<a href="#">Home</a>
+					</th>
+					<th class="menu">
+						<a href="product.html">Products</a>
+					</th>
+					<th class="menu">
+						<a href="blog.html">Blogs</a>
+					</th>
+					<th class="menu">
+						<a href="research.html">Research</a>
+					</th>
+					<th class="menu">
+						<a href="contact.html">Contact Us</a>
+					</th>
+				</tr>
+			</table>
+		</nav>
+		<div class="info">
+			<h1>Welcome to <i>MyStore</i></h1>
+			<h4>We sell the best quality electric appliances</h4>
+		</div>
+	</header>
+	<footer>
+		<div class="container">
+			<div class="copyright">
+				&copy; All Rights Reserved by <i>MyStore</i> &nbsp;&nbsp;&nbsp;&nbsp;
+			</div>
+		</div>
+	</footer>
+	<div>
+		<img src="image\TV.jpg" class="slider">
+		<img src="image\tech.jpg" class="slider">
+		<img src="image\refrigerator.jpg" class="slider">
+		<img src="image\washingmachine.jpg" class="slider">
+	</div>
+	<center>
+		<button onclick="change(-1)">&lt;</button>
+		<button onclick="change(1)">&gt;</button>
+	</center>
+	
+	<script type="text/javascript">
+
+		index = 0;
+
+		show(index);
+
+		function show(n){
+			var imgs = document.getElementsByClassName('slider');
+
+			if (n> imgs.length-1) {
+				index= 0;
+			}
+
+			if(n<0){
+				index= imgs.length - 1;
+			} 
+
+			for (var i = 0; i <= imgs.length-1; i++) {
+				imgs[i].style.display="none";
+			}
+
+			imgs[index].style.display="block";
+		}
+
+
+		function automatic(){
+			index++;
+			show(index);
+			setTimeout(automatic, 2000);
+		}
+
+		automatic();
+
+		function change(n){
+			index+= n;
+			show(index);
+		}	
+	</script>
+</body>
+</html>
